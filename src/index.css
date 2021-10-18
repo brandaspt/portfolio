@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+
+:root {
+  --prim-dark: #d86e74;
+  --prim-light: rgb(255, 242, 218);
+  --prim-green: #96d86e;
+  --prim-blue: #6e98d8;
+  --prim-box-shadow: 0 3px 6px 0px rgb(0 0 0 / 50%);
+}
+
+body {
+  margin: 0;
+  background-color: rgb(43, 38, 41);
+  font-family: "Major Mono Display", monospace;
+  color: var(--prim-light);
+}
+p {
+  margin: 0;
+}
+a {
+  color: inherit;
+}
+a:hover {
+  color: rgb(248, 208, 128);
+}

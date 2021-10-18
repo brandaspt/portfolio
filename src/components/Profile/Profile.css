@@ -1,0 +1,16 @@
+.Profile img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 50%;
+  box-shadow: var(--prim-box-shadow);
+}
+.Profile {
+  text-align: center;
+}
+.Profile h2 {
+  text-decoration: underline;
+}
+.Profile svg {
+  font-size: 30px;
+  margin: 5px 10px 5px 0;
+}

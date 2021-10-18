@@ -1,0 +1,31 @@
+@keyframes infiniteRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.wheel-wrapper {
+  position: relative;
+  padding: 95px;
+  border-radius: 50%;
+  background-color: var(--prim-light);
+}
+.Wheel {
+  position: relative;
+  border-radius: 50%;
+  animation: infiniteRotate 35s linear infinite;
+}
+.wheel-wrapper .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Major Mono Display", monospace;
+  font-size: 22px;
+  text-align: center;
+  color: rgb(92, 75, 44);
+}
