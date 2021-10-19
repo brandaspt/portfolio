@@ -7,11 +7,13 @@ const Projects = () => {
   return (
     <Row className="Projects pb-5">
       <h2>PROJECTS</h2>
-      <Col className="d-flex align-items-center">
+      <Col md={4} className="d-flex align-items-center justify-content-center">
         <img src={journeyLogLogo} alt="journey log" />
-        <ul className="ms-5 d-flex flex-column">
+      </Col>
+      <Col md={8}>
+        <ul className="d-flex flex-column m-0">
           <li>
-            <p>fullstack mern application</p>
+            <p>mern stack application using typescript and leaflet</p>
           </li>
           <li>
             <p>build a custom, interactive map with your travels' photos</p>

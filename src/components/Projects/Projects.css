@@ -1,4 +1,6 @@
 .Projects h2 {
   text-decoration: underline;
-  margin-bottom: 30px;
+}
+.Projects img {
+  padding: 20px 0;
 }
