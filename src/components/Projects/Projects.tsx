@@ -8,7 +8,9 @@ const Projects = () => {
     <Row className="Projects pb-5">
       <h2>PROJECTS</h2>
       <Col md={4} className="d-flex align-items-center justify-content-center">
-        <img src={journeyLogLogo} alt="journey log" />
+        <a href="https://journey-log-fe.vercel.app/" target="_blank" rel="noreferrer">
+          <img src={journeyLogLogo} alt="journey log" />
+        </a>
       </Col>
       <Col md={8}>
         <ul className="d-flex flex-column m-0">
