@@ -17,9 +17,10 @@ body {
 p {
   margin: 0;
 }
-a {
+a,
+a:hover {
   color: inherit;
 }
-a:hover {
+/* a:hover {
   color: rgb(248, 208, 128);
-}
+} */

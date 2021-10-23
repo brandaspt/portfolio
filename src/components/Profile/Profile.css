@@ -12,5 +12,24 @@
 }
 .Profile svg {
   font-size: 30px;
-  margin: 5px 10px 5px 0;
+}
+.Profile .icons {
+  max-width: 300px;
+  margin: 0 auto 20px;
+}
+.Profile .icons a {
+  position: relative;
+}
+.Profile .icons p {
+  position: absolute;
+  left: 50%;
+  bottom: -25px;
+  transform-origin: top;
+  transform: translateX(-50%) scaleY(0);
+  opacity: 0;
+  transition: all 0.5s;
+}
+.Profile .icons a:hover p {
+  transform: translateX(-50%) scaleY(1);
+  opacity: 1;
 }

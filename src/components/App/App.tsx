@@ -1,4 +1,6 @@
-import { Col, Container, Row } from "react-bootstrap"
+import { Container } from "react-bootstrap"
+import { Route, Switch } from "react-router"
+import Navbar from "../Navbar/Navbar"
 import Profile from "../Profile/Profile"
 import Projects from "../Projects/Projects"
 import Wheel from "../Wheel/Wheel"
@@ -8,13 +10,12 @@ import "./App.css"
 const App = () => {
   return (
     <Container fluid="md" className="App">
+      <Navbar />
       <Profile />
-      <Row className="py-5">
-        <Col>
-          <Wheel />
-        </Col>
-      </Row>
-      <Projects />
+      <Switch>
+        <Route path="/projects" component={Projects} />
+        <Route path="/" component={Wheel} />
+      </Switch>
     </Container>
   )
 }

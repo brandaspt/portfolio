@@ -1,11 +1,12 @@
-import { Col, Row } from "react-bootstrap"
+import { Col } from "react-bootstrap"
+import { motion } from "framer-motion"
 import journeyLogLogo from "../../images/JourneyLogLogo.png"
 
 import "./Projects.css"
 
 const Projects = () => {
   return (
-    <Row className="Projects pb-5">
+    <motion.div className="Projects py-5 row" initial={{ x: "-100vw" }} animate={{ x: 0 }} transition={{ type: "spring", mass: 0.6 }}>
       <h2>PROJECTS</h2>
       <Col md={4} className="d-flex align-items-center justify-content-center">
         <a href="https://journey-log-fe.vercel.app/" target="_blank" rel="noreferrer">
@@ -37,7 +38,7 @@ const Projects = () => {
           </li>
         </ul>
       </Col>
-    </Row>
+    </motion.div>
   )
 }
 
