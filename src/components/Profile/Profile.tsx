@@ -6,11 +6,16 @@ import "./Profile.css"
 
 const Profile = () => {
   return (
-    <motion.div className="Profile gy-4 row" initial={{ y: -800 }} animate={{ y: 0 }} transition={{ type: "spring", mass: 0.6 }}>
-      <Col md={6} className="d-none d-md-block">
+    <motion.div
+      className="Profile row py-4 py-md-0"
+      initial={{ y: -800 }}
+      animate={{ y: 0 }}
+      transition={{ type: "spring", duration: 0.6 }}
+    >
+      <Col md={6} className="pb-3">
         <img src={headshot} alt="my avatar" />
       </Col>
-      <Col md={6}>
+      <Col md={6} className="d-flex flex-column align-items-center justify-content-center">
         <h2>HI I'M TIAGO</h2>
         <p className="mb-3">javascript fullstack developer</p>
         <div className="icons d-flex align-items-center justify-content-evenly">

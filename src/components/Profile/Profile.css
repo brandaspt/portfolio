@@ -14,7 +14,7 @@
   font-size: 30px;
 }
 .Profile .icons {
-  max-width: 300px;
+  min-width: 300px;
   margin: 0 auto 20px;
 }
 .Profile .icons a {

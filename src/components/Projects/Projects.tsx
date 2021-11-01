@@ -6,7 +6,13 @@ import "./Projects.css"
 
 const Projects = () => {
   return (
-    <motion.div className="Projects py-5 row" initial={{ x: "-100vw" }} animate={{ x: 0 }} transition={{ type: "spring", mass: 0.6 }}>
+    <motion.div
+      className="Projects py-5 row"
+      initial={{ x: "-100vw" }}
+      animate={{ x: 0 }}
+      transition={{ type: "spring", mass: 0.6 }}
+      exit={{ x: "100vw", transition: { ease: "easeInOut" } }}
+    >
       <h2>PROJECTS</h2>
       <Col md={4} className="d-flex align-items-center justify-content-center">
         <a href="https://journey-log-fe.vercel.app/" target="_blank" rel="noreferrer">

@@ -8,7 +8,7 @@ import nodeLogo from "../../images/node.png"
 import gitLogo from "../../images/git.png"
 import htmlcssLogo from "../../images/htmlcss.png"
 import { Col } from "react-bootstrap"
-import { AnimatePresence, motion } from "framer-motion"
+import { motion } from "framer-motion"
 import "./Wheel.css"
 
 const Wheel = () => {
@@ -29,36 +29,33 @@ const Wheel = () => {
   // }
 
   return (
-    <AnimatePresence>
-      <motion.div
-        className="py-2 row"
-        initial={{ x: "-100vw" }}
-        animate={{ x: 0 }}
-        transition={{ type: "spring", mass: 0.6 }}
-        exit={{ x: "100vw" }}
-        key="wheel"
-      >
-        <Col>
-          <div className="d-flex justify-content-center">
-            <div className="wheel-wrapper">
-              <div className="Wheel" style={styles}>
-                <WheelItem theta={0} radius={radius} url={reactLogo} key={`item${0}`} />
-                <WheelItem theta={45} radius={radius} url={reduxLogo} key={`item${45}`} />
-                <WheelItem theta={90} radius={radius} url={tsLogo} key={`item${90}`} />
-                <WheelItem theta={135} radius={radius} url={mongoLogo} key={`item${135}`} />
-                <WheelItem theta={180} radius={radius} url={expressLogo} key={`item${180}`} />
-                <WheelItem theta={225} radius={radius} url={nodeLogo} key={`item${225}`} />
-                <WheelItem theta={270} radius={radius} url={gitLogo} key={`item${270}`} />
-                <WheelItem theta={315} radius={radius} url={htmlcssLogo} key={`item${315}`} />
-              </div>
-              <div className="text">
-                <p className="m-0">MAIN TECH STACK</p>
-              </div>
+    <motion.div
+      className="py-2 row"
+      initial={{ x: "-100vw" }}
+      animate={{ x: 0 }}
+      transition={{ type: "spring", mass: 0.4 }}
+      exit={{ x: "100vw", transition: { ease: "easeInOut" } }}
+    >
+      <Col>
+        <div className="d-flex justify-content-center">
+          <div className="wheel-wrapper">
+            <div className="Wheel" style={styles}>
+              <WheelItem theta={0} radius={radius} url={reactLogo} key={`item${0}`} />
+              <WheelItem theta={45} radius={radius} url={reduxLogo} key={`item${45}`} />
+              <WheelItem theta={90} radius={radius} url={tsLogo} key={`item${90}`} />
+              <WheelItem theta={135} radius={radius} url={mongoLogo} key={`item${135}`} />
+              <WheelItem theta={180} radius={radius} url={expressLogo} key={`item${180}`} />
+              <WheelItem theta={225} radius={radius} url={nodeLogo} key={`item${225}`} />
+              <WheelItem theta={270} radius={radius} url={gitLogo} key={`item${270}`} />
+              <WheelItem theta={315} radius={radius} url={htmlcssLogo} key={`item${315}`} />
+            </div>
+            <div className="text">
+              <p className="m-0">MAIN TECH STACK</p>
             </div>
           </div>
-        </Col>
-      </motion.div>
-    </AnimatePresence>
+        </div>
+      </Col>
+    </motion.div>
   )
 }
 
