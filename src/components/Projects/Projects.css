@@ -1,6 +1,10 @@
 .Projects h2 {
   text-decoration: underline;
 }
+.Projects .row {
+  padding: 15px 0;
+}
 .Projects img {
   padding: 20px 0;
+  max-height: 92px;
 }
