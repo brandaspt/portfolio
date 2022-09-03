@@ -12,7 +12,7 @@ const Navbar = () => {
 						to="/portfolio"
 						className={location.pathname === "/portfolio" ? "selected" : ""}
 					>
-						{location.pathname === "/" ? "/HOME" : "HOME"}
+						{location.pathname === "/portfolio" ? "/HOME" : "HOME"}
 					</Link>
 				</li>
 				<li>
