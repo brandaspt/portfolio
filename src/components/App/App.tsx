@@ -16,8 +16,7 @@ const App = () => {
 			<Profile />
 			<AnimatePresence exitBeforeEnter>
 				<Switch location={location} key={location.pathname}>
-					<Route exact path="/" component={Wheel} />
-					<Route path="/portfolio" component={Wheel} />
+					<Route exact path={["/", "/portfolio"]} component={Wheel} />
 					<Route path="/projects" component={Projects} />
 				</Switch>
 			</AnimatePresence>
