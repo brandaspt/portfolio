@@ -4,6 +4,7 @@ import "./Navbar.css"
 
 const Navbar = () => {
 	const location = useLocation()
+	console.log(location)
 	return (
 		<div className="Navbar py-4">
 			<ul>
