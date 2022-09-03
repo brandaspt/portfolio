@@ -9,19 +9,20 @@ import Wheel from "../Wheel/Wheel"
 import "./App.css"
 
 const App = () => {
-  const location = useLocation()
-  return (
-    <Container fluid="md" className="App">
-      <Navbar />
-      <Profile />
-      <AnimatePresence exitBeforeEnter>
-        <Switch location={location} key={location.pathname}>
-          <Route exact path="/" component={Wheel} />
-          <Route path="/projects" component={Projects} />
-        </Switch>
-      </AnimatePresence>
-    </Container>
-  )
+	const location = useLocation()
+	return (
+		<Container fluid="md" className="App">
+			<Navbar />
+			<Profile />
+			<AnimatePresence exitBeforeEnter>
+				<Switch location={location} key={location.pathname}>
+					<Route exact path="/" component={Wheel} />
+					<Route path="/portfolio" component={Wheel} />
+					<Route path="/projects" component={Projects} />
+				</Switch>
+			</AnimatePresence>
+		</Container>
+	)
 }
 
 export default App
